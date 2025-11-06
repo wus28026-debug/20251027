@@ -278,7 +278,7 @@ function createSideMenu() {
     const items = [
         { text: '第一單元作品', action: 'iframe', url: 'https://wus28026-debug.github.io/20251020/' },
         { text: '第一單元講義', action: 'iframe', url: 'https://hackmd.io/-vg_gBO4RuCCxOnJCADrRQ?both' },
-        { text: '測驗系統', action: 'iframe', url: 'http://127.0.0.1:5500/index.html' },
+        { text: '測驗系統', action: 'iframe', url: 'https://wus28026-debug.github.io/20251103/' },
         { text: '回到首頁', href: 'index.html' }
     ];
     items.forEach(item => {
@@ -331,10 +331,13 @@ function createSideMenu() {
     const closeBtn = document.getElementById('iframeCloseBtn');
 
     function openIframe(url) {
+        const iframe = document.getElementById('contentIframe');
         iframe.src = url;
+        const overlay = document.getElementById('iframeOverlay');
         overlay.style.display = 'flex';
         // 讓 menu 收回
-        menu.classList.remove('open');
+        const menu = document.getElementById('sideMenu');
+        if (menu) menu.classList.remove('open');
     }
     function closeIframe() {
         // 停止並清除 src（釋放資源）
