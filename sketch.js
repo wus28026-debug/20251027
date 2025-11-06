@@ -279,6 +279,8 @@ function createSideMenu() {
         { text: '第一單元作品', action: 'iframe', url: 'https://wus28026-debug.github.io/20251020/' },
         { text: '第一單元講義', action: 'iframe', url: 'https://hackmd.io/-vg_gBO4RuCCxOnJCADrRQ?both' },
         { text: '測驗系統', action: 'iframe', url: 'https://wus28026-debug.github.io/20251103/' },
+        { text: '測驗卷筆記', action: 'iframe', url: 'https://hackmd.io/@BaN-RevzTta1yPjQLaJ-Ew/rkyK7qr1-e' },
+        { text: '作品筆記', action: 'iframe', url: 'https://hackmd.io/xJIwS4zFTECwJCVvxXfS1g' },
         { text: '回到首頁', href: 'index.html' }
     ];
     items.forEach(item => {
